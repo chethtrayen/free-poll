@@ -1,0 +1,39 @@
+{
+  "name": "graphql-boilerplate",
+  "version": "1.0.0",
+  "description": "This repo contains the starter template for a NodeJS + TypeScript based GraphQL project.",
+  "main": "index.js",
+  "scripts": {
+    "client:dev": "cd ./client && npm start",
+    "compile": "tsc",
+    "lint": "npx eslint .",
+    "prettier": "prettier --check \"{server,client}/**/*.{js,ts}\"",
+    "prettier:fix": "prettier --write \"{server,client}/**/*.{js,ts}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:dev": "cd ./server && npm run start:dev",
+    "server:prod": "set NODE_ENV=prod&& node ./dist/server/index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chethtrayen/graphql-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chethtrayen/graphql-boilerplate/issues"
+  },
+  "homepage": "https://github.com/chethtrayen/graphql-boilerplate#readme",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "@types/express-useragent": "^1.0.2",
+    "@types/uuid": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "cookie-parser": "^1.4.6",
+    "eslint": "^8.30.0",
+    "express-useragent": "^1.0.15"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
